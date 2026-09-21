@@ -171,6 +171,65 @@ function calcularChurrasco() {
     "\nRefri: " + refri + " litros"
   );
 }
+
+function calcularLucro() {
+  let caminhoes = Number(prompt("Digite o número de caminhões:"))
+
+  let jares = caminhoes * 50
+  let faturamento = jares * 90
+  let custo = caminhoes * 450
+  let lucro = faturamento - custo
+
+  alert("Seu lucro é: R$ " + lucro)
+}
+
+function calcularTokens() {
+  let caracteres = Number(prompt("Digite o número de caracteres:"))
+
+  let tokens = caracteres + 5
+
+  alert("Você vai gastar " + tokens + " tokens")
+}
+
+function calcularFreela() {
+  let horas = Number(prompt("Digite a quantidade de horas:"))
+
+  let preco = 500 + (horas * 350)
+  let lucro = horas * 350
+
+  alert("Preço a cobrar: R$ " + preco)
+}
+
+function calcularRelatorio() {
+  let relPF = 40
+  let relPJ = 33
+
+  let tempoPF = 12
+  let tempoPJ = 42
+
+  let valorPF = 2350
+  let valorPJ = 8900
+
+  let totalRelatorios = relPF + relPJ
+  let totalTempo = tempoPF + tempoPJ
+  let totalValor = valorPF + valorPJ
+
+  let mediaValorPF = (valorPF / relPF).toFixed(2)
+  let mediaValorPJ = (valorPJ / relPJ).toFixed(2)
+
+  let mediaTempoPF = (tempoPF / relPF).toFixed(2)
+  let mediaTempoPJ = (tempoPJ / relPJ).toFixed(2)
+
+  alert(
+    "Total de relatórios: " + totalRelatorios +
+    "\nTempo total: " + totalTempo + " horas" +
+    "\nValor total: R$ " + totalValor +
+    "\nMédia valor PF: R$ " + mediaValorPF +
+    "\nMédia valor PJ: R$ " + mediaValorPJ +
+    "\nMédia tempo PF: " + mediaTempoPF + " horas" +
+    "\nMédia tempo PJ: " + mediaTempoPJ + " horas"
+  )
+}
    function calcularDevs() {
 let clt = Number(prompt('Quantos clts tem na sua empresa?'))
  let estagiarios = Number(prompt('Quantos estágiarios tem na sua empresa?'))
@@ -248,8 +307,10 @@ alert('O time teu tem ' + pontos + ' pontos')
 <button onClick={calcularPreco}>Calcular Preço</button>
 <button onClick={calcularRacao}>Calcular Ração</button>
 <button onClick={calcularChurrasco}>Calcular Churrasco</button>
-
-
+<button onClick={calcularLucro}>Gael e seus Jarés</button>
+<button onClick={calcularTokens}>Preço dos prompts</button>
+<button onClick={calcularFreela}>Junin e seus freela</button>
+<button onClick={calcularRelatorio}>Kowalski</button>
 <hr />
 
     <button onClick={testar}>Testar</button>
