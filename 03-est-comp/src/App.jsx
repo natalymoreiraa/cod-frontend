@@ -6,6 +6,9 @@ import PesoIdeal from "./components/Pesoideal";
 import Macas from "./components/Macas";
 import Ganso from "./components/Ganso";
 import Recrutamento from "./components/Recrutamento";
+import Sarumano from "./components/Sarumano";
+import Deslocamento from "./components/Deslocamento";
+import Entradanopalco from "./components/Entradanopalco";
 
 function App() {
   return (
@@ -15,6 +18,9 @@ function App() {
        <h2>#0030</h2>
        <Ganso />
        <Recrutamento />
+       <Sarumano />
+       <Deslocamento />
+        <Entradanopalco />
 
        <hr />
 
