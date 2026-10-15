@@ -18,6 +18,7 @@ function App() {
         <button onClick={mostrarHome}>Home</button>
         <button onClick={() => setPagina(1)}>Ofertas</button>
         <button onClick={() => setPagina (2)}>Compras</button>
+      
       </nav>
   
 <h1>Navegação</h1>
