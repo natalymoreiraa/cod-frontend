@@ -3,15 +3,15 @@ import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
+import Home from './pages/Home'
+import Demo from './pages/Demo'
 
 function App() {
 
   return (
 <div className="app">
-  <h1>Inputs controlados</h1>
-  <label htmlFor="">Login</label>
-  <input type="text" />
-  <button>Entrar</button>
+  <Home />
+  <Demo />
 </div>
   )
 }
